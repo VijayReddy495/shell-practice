@@ -7,3 +7,8 @@ echo "the firt person name is $person1"
 echo "the second person name is $person2"
 
 echo "environment varible is :$course"
+
+echo " enter the pin " 
+read PIN_NUMBER
+
+echo "entered pin is PIN_NUMBER"
