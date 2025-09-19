@@ -1,0 +1,9 @@
+#!/bin/bash
+
+person1=$1
+person2=$2
+
+echo "the firt person name is $person1"
+echo "the second person name is $person2"
+
+echo "environment varible is :$course"
