@@ -10,6 +10,6 @@ number1=110
 number2=220
 string1=devops
 
-addition_result = $sum((number1+number2+string1))
+addition_result = $sum(($number1+$number2+$string1))
 
 echo "sum of the numbers is :$addition_result"
