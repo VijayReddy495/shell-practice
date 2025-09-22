@@ -16,4 +16,4 @@ echo "sum of the numbers is :$addition_result"
 
 Leaders=(VIJAY,REDDY,NIKKI)
 
-echo "leaders list is :$Leaders[@]"
+echo "leaders list is :{$Leaders[@]}"
