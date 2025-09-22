@@ -11,7 +11,7 @@ validate(){
     echo "$2 has been successfully installed"
    else
     echo "there is error installing $2 package"
- 
+   fi
 }
 
 dnf install mysql -y
