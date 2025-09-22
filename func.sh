@@ -15,10 +15,10 @@ if [ $userid -ne 0 ]; then
 fi 
 
 Log_Folder="/var/log/shell-script"
-Script_Name=$(echo $0 | cut -d "." -f1) 
+Script_Name=$( echo $0 | cut -d "." -f1 ) 
 Log_File="$Log_Folder/$Script_Name.log"
 
-mkdir -p Log_Folder
+mkdir -p $Log_Folder
 
 validate(){
    if [ $1 -eq 0 ]; then 
