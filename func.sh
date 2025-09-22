@@ -5,7 +5,7 @@ userid=$(id -u)
 
 R="\e[31m"
 G="\e[32m"
-y="\e[33m"
+Y="\e[33m"
 N="\e[0m"
 
 
@@ -37,7 +37,7 @@ else
     echo -e "mysql is already installed, So ...$Y Skipping $N" | tee -a Log_File 
 fi     
 
-dnf list installed nginx Log_File
+dnf list installed nginx >> Log_File
 if [ $? -ne 0 ]; then 
     dnf install nginx -y
     validate $? "nginx"
@@ -45,7 +45,7 @@ else
     echo -e "nginx is already installed, So ...$Y Skipping $N" | tee -a Log_File
 fi    
 
-dnf list installed python3 Log_File
+dnf list installed python3 >> Log_File
 if [ $? -ne 0 ]; then 
     dnf install python3 -y
     validate $? "python3"
