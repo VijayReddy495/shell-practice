@@ -17,6 +17,7 @@ fi
 Log_Folder="/var/log/shell-script"
 Script_Name=$( echo $0 | cut -d "." -f1 ) 
 Log_File="$Log_Folder/$Script_Name.log"
+echo "Log_File"
 
 mkdir -p $Log_Folder
 
