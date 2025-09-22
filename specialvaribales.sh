@@ -12,4 +12,4 @@ string1=devops
 
 addition_result = $(($number1+$number2+$string1))
 
-echo "sum of the numbers is :$addition_result"
+echo "sum of the numbers is :{$addition_result}"
