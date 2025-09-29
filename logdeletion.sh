@@ -9,7 +9,7 @@ echo "script started executing at :$(date)" | tee -a $Log_Path
 
 Source_Dir=/home/ec2-user/app-logs
 
-if[ ! -d $Source_Dir ]; then 
+if [ ! -d $Source_Dir ]; then 
     echo "Source Directory doesn't exists"
     exit 1
 fi
