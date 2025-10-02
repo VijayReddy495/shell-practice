@@ -3,8 +3,8 @@ Disk_Usage=$(df -hT | grep -v Filesystem)
 Treshold_Limit=2
 while IFS= read -r line
     do 
-        usage=$(echo line | awk '{print $6}' | cut -d "%" -f1)
-        partition=$(echo line | awk '{print $7}')
+        usage=$(echo $line | awk '{print $6}' | cut -d "%" -f1)
+        partition=$(echo $line | awk '{print $7}')
         if [ $usage -ge $Treshold_Limit ]; then 
             echo "High usage on $partition":$usage
         fi    
