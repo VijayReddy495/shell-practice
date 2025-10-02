@@ -1,0 +1,3 @@
+#!/bin/bash
+Disk_Usage=(df -hT | grep -v Filesystem)
+echo $Disk_Usage
